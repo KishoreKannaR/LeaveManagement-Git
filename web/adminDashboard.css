@@ -1,0 +1,90 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+}
+
+#left-panel {
+    flex: 2;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+}
+
+#right-panel {
+    flex: 0.9;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#calendar-container {
+    width: 100%;
+    height: 260px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#calendar {
+    width: 100%;
+    height: 100%;
+}
+
+#manageEventBtn {
+    margin-top: 12px;
+    padding: 7px 12px;
+    background: #2196F3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#event-list {
+    margin-top: 14px;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+#eventList {
+    list-style-type: none;
+    padding-left: 15px;
+    font-size: 13px;
+}
+
+#eventModal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#eventModal input,
+#eventModal textarea,
+#eventModal select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 6px;
+}
+
+#eventModal button {
+    margin-right: 10px;
+}
