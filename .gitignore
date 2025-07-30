@@ -1,0 +1,16 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore log files and temporary folders
+*.log
+tmp/
+temp/
+
+# Ignore OS-specific system files
+.DS_Store
+Thumbs.db
+
+# Ignore Eclipse project files
+.settings/
+.project
+.classpath
